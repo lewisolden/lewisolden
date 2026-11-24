@@ -2,7 +2,7 @@
 
 I build production AI systems inside real businesses and own them end to end: from the first conversation with the operator, through the data, the agent loop and the evals, to the interface people use every day.
 
-I run **Olden & Co**, where I manage CEE equity funds, so I come at AI from the operator's side. I know what it takes for a system to be trusted with real money and real decisions, and I build to that bar. Over the past year I've shipped agentic platforms for my own firm and for clients across finance, media, music and healthcare, working embedded with each team.
+I run an investment firm managing CEE equity funds, so I come at AI from the operator's side. I know what it takes for a system to be trusted with real money and real decisions, and I build to that bar. Over the past year I've shipped agentic platforms for my own firm and for clients across finance, media, music and healthcare, working embedded with each team.
 
 ### Systems I've shipped
 
