@@ -6,19 +6,19 @@ I run **Olden & Co**, where I manage CEE equity funds, so I come at AI from the 
 
 ### Systems I've shipped
 
-**Fund operations platform with a Claude research agent** · *my own firm*
+**Fund operations platform with a Claude research agent** · *my own firm*  
 Runs two funds day to day. It ingests messy administrator packs (Excel, PDFs, broker tickets), reconciles positions, repo financing, collateral and NAV against them, and marks the book live. The Claude-powered research agent sits on top with an eval dataset and test suite in CI. It sends an automated daily P&L and weekly investor report, all of it fully derived from source tables. Security includes MFA, row-level security and an audit log.
 
-**Agent orchestration platform** · *AI services firm*
+**Agent orchestration platform** · *AI services firm*  
 A monorepo running a dedicated orchestrator service, agent surfaces for staff and clients, an evals dashboard and a written agent-quality standard. OpenTelemetry tracing and AWS infrastructure are defined in CDK.
 
-**Agent desk with a cost-aware model gateway** · *AI services firm*
+**Agent desk with a cost-aware model gateway** · *AI services firm*  
 An internal operating desk where agents propose actions for human approval. It routes calls through a gateway with per-agent budgets and cost tracking, covered by tests.
 
-**Artist operating system** · *music and media*
+**Artist operating system** · *music and media*  
 An AWS-native rebuild on Lambda, API Gateway, RDS, SQS and EventBridge. It runs an agent registry with structured outputs that powers career-planning, daily-plan and creative agents for artists.
 
-**Leadership operations platform** · *sports and entertainment*
+**Leadership operations platform** · *sports and entertainment*  
 Covers reporting across performance, people, commercial, finance and legal, plus the revenue pipeline. Claude agents run on events and schedules, for example a weekly leadership brief and a partnership scout.
 
 Other builds include a cultural intelligence subscription product with research agents, and a compliance platform for a CQC-regulated remote healthcare provider.
