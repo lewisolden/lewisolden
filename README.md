@@ -1,22 +1,39 @@
 ## Lewis Olden
 
-Investment principal and hands-on builder. I run **Olden & Co**, managing CEE equity funds, and I design and ship the software behind the work: from the systems that run our own funds to production platforms for clients in music, media and healthcare.
+I build production AI systems inside real businesses and own them end to end: from the first conversation with the operator, through the data, the agent loop and the evals, to the interface people use every day.
 
-I sit where finance, product and engineering meet. I take a problem from the business side, design the system, write the code and run it in production.
+I run **Olden & Co**, where I manage CEE equity funds, so I come at AI from the operator's side. I know what it takes for a system to be trusted with real money and real decisions, and I build to that bar. Over the past year I've shipped agentic platforms for my own firm and for clients across finance, media, music and healthcare, working embedded with each team.
 
-### Selected work
+### Systems I've shipped
 
-| Area | What I built |
-| --- | --- |
-| **Fund operations** | An end-to-end platform for two funds: live portfolio marks and FX, repo financing and collateral tracking, NAV reconciliation against administrator packs, and automated daily P&L and weekly investor reporting. Secured with MFA, row-level security and an audit log. |
-| **AI agents** | Multi-agent operating desks and an LLM-powered cultural intelligence subscription product, built on the Claude API. |
-| **Music and media** | An artist operating system (AWS-native rebuild), music rights tooling, and fan community platforms for global artists and youth sport. |
-| **Regulated healthcare** | A clinician compliance platform for a CQC-regulated remote consultation provider. |
+**Fund operations platform with a Claude research agent** · *my own firm*
+Runs two funds day to day. It ingests messy administrator packs (Excel, PDFs, broker tickets), reconciles positions, repo financing, collateral and NAV against them, and marks the book live. The Claude-powered research agent sits on top with an eval dataset and test suite in CI. It sends an automated daily P&L and weekly investor report, all of it fully derived from source tables. Security includes MFA, row-level security and an audit log.
+
+**Agent orchestration platform** · *AI services firm*
+A monorepo running a dedicated orchestrator service, agent surfaces for staff and clients, an evals dashboard and a written agent-quality standard. OpenTelemetry tracing and AWS infrastructure are defined in CDK.
+
+**Agent desk with a cost-aware model gateway** · *AI services firm*
+An internal operating desk where agents propose actions for human approval. It routes calls through a gateway with per-agent budgets and cost tracking, covered by tests.
+
+**Artist operating system** · *music and media*
+An AWS-native rebuild on Lambda, API Gateway, RDS, SQS and EventBridge. It runs an agent registry with structured outputs that powers career-planning, daily-plan and creative agents for artists.
+
+**Leadership operations platform** · *sports and entertainment*
+Covers reporting across performance, people, commercial, finance and legal, plus the revenue pipeline. Claude agents run on events and schedules, for example a weekly leadership brief and a partnership scout.
+
+Other builds include a cultural intelligence subscription product with research agents, and a compliance platform for a CQC-regulated remote healthcare provider.
+
+### How I work
+
+- **Evals and observability from day one.** I don't ship an agent I can't measure.
+- **Prototype to production fast**, using Claude Code and the latest models the week they land.
+- **Comfortable in messy data and other people's systems:** APIs, SQL and spreadsheets nobody else wants to touch.
+- **Equally at home with an investment committee and a codebase.**
 
 ### Stack
 
-TypeScript · Next.js · React · Node.js · PostgreSQL / Supabase · AWS · Vercel · PHP · Claude API · CI/CD with GitHub Actions
+TypeScript · Next.js · React · Node.js · Claude API · agents and tool use · evals · PostgreSQL / Supabase · SQL · AWS (Lambda, CDK, RDS, SQS, EventBridge) · Vercel · OpenTelemetry · GitHub Actions
 
 ### Note
 
-Most of my work is proprietary or for clients, so those repositories are private. I'm happy to walk through architecture, code and outcomes in conversation.
+My work is proprietary or for clients, so those repositories are private. I'm happy to walk through the architecture, code and outcomes of any of these in conversation.
