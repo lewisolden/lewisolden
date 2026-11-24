@@ -18,7 +18,7 @@ An internal operating desk where agents propose actions for human approval. It r
 **Artist operating system** · *music and media*  
 An AWS-native rebuild on Lambda, API Gateway, RDS, SQS and EventBridge. It runs an agent registry with structured outputs that powers career-planning, daily-plan and creative agents for artists.
 
-**Leadership operations platform** · *sports and entertainment*  
+**Leadership operations platform** · *client engagement*  
 Covers reporting across performance, people, commercial, finance and legal, plus the revenue pipeline. Claude agents run on events and schedules, for example a weekly leadership brief and a partnership scout.
 
 Other builds include a cultural intelligence subscription product with research agents, and a compliance platform for a CQC-regulated remote healthcare provider.
